@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Efigence reports</title>
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header row">
+        <div class="header__back-btn col-1 pointer">
+          <img src="./img/back-arrow.png" alt="Wróć" />
+        </div>
+        <div class="header__title col-10 text-uppercase text-center">
+          <h1>Raporty</h1>
+        </div>
+      </header>
+      <!-- SEARCHBOX -->
+      <div class="content-page search-box" id="search-box">
+        <div class="row">
+          <div class="col-3 col-md-3 col-lg-2">
+            <select id="yearsSelect">
+              <!-- yearsOptions -->
+            </select>
+          </div>
+          <div class="col-9 col-md-9 col-lg-10">
+            <input
+              type="text"
+              id="textSearch"
+              placeholder="Podaj nazwę, numer lub datę raportu"
+            />
+            <button type="button" class="btn" id="search-btn">Szukaj</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="search-box__tags col-sm-12">
+            <div class="tag">
+              <input
+                type="checkbox"
+                id="tag-0"
+                name="tags"
+                value="0"
+                class="tag__input"
+                checked
+              />
+              <label for="tag-0">Wszystkie</label>
+              <span class="close-icon">x</span>
+            </div>
+            <!-- tagsOptions -->
+          </div>
+        </div>
+      </div>
+      <!-- RESULTSBOX -->
+      <div class="content-page reports-box" id="reports-box"></div>
+    </div>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>
